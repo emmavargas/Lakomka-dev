@@ -1,3 +1,5 @@
+$topbar-font-color: #9E9E9E;
+
 .topbar {
   background: #2B2B2B;
   font-size: 10px;
@@ -7,10 +9,9 @@
   letter-spacing: 2px;
   width: 100%;
   min-height: 30px;
-  margin-bottom: 6px;
   line-height: 1.6;
   a{
-    color: #9E9E9E;
+    color: $topbar-font-color;
     display: inline-block;
     padding: 7px 18px 7px;
     &:first-child {
@@ -38,6 +39,14 @@
         height: 18px;
         width: 15em;
         box-sizing: border-box;
+      }
+      svg {
+        width: 18px;
+        height: 18px;
+        vertical-align: middle;
+        > path{
+          fill: $topbar-font-color;
+        }
       }
     }
   }
