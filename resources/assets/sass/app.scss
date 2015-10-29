@@ -40,14 +40,14 @@
 // @import 'foundation/components/offcanvas';
 // @import 'foundation/components/visibility';
 
-@import './componentes/topbar';
-@import './componentes/topmenu';
-@import './componentes/home-banner';
 body {
   font-family: Lato, sans-serif;
 }
 
-a, .link {
+a {
   text-decoration: none;
   text-transform: uppercase;
 }
+
+
+@import './blocks/_site-header';

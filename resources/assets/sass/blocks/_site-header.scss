@@ -1,0 +1,20 @@
+.site-header {
+  font-size: 10px;
+  font-style: normal;
+  font-weight: 900;
+  line-height: 12px;
+  letter-spacing: 2px;
+  width: 100%;
+  font-family: $font-family-sans-serif;
+  &__topbar {
+    position: relative;
+    line-height: 1.6;
+  }
+
+  &__main-nav {
+
+  }
+
+}
+
+@import 'topbar';
