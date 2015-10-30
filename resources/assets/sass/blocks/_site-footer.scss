@@ -1,0 +1,65 @@
+$footer-logo-color: #FFF;
+$footer-color-font: #9E9E9E;
+$footer-color-background: #2B2B2B;
+$footer-font-color-hover: scale-color($topbar-font-color, $lightness: -90%);
+
+.site-footer{
+  background-color: $footer-color-background;
+  font-size: 10px;
+  line-height: 15px;
+  font-family: $font-family-sans-serif;
+  font-weight: 300;
+  color: $footer-color-font;
+  text-align: center;
+  padding: 10px 0;
+  position: relative;
+  &__list {
+    list-style: none;
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+    display: inline-block;
+  }
+  &__item {
+    display: inline-block;
+  }
+  &__link {
+    color: $footer-color-font;
+    display: inline-block;
+    margin: 21px 0 21px;
+    padding: 10px 18px 10px;
+    transition: color 100ms linear;
+    display: inline-block;
+  }
+  &__logo {
+    display: block;
+    padding: 0;
+    margin: 0 auto;
+    width: 180px;
+    padding: 27px 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin: 0 auto;
+    width: 100%;
+    > svg {
+      width: 180px;
+      display: inline-block;
+      vertical-align: middle;
+      path {
+        fill: $footer-logo-color;
+      }
+    }
+  }
+  &__copyright{
+    text-align: center;
+    display: block;
+    margin: 0 auto;
+    clear: both;
+    width: 550px;
+
+  }
+  &__social {
+    display: inline-block;
+  }
+}

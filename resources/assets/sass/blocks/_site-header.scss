@@ -12,9 +12,11 @@
   }
 
   &__main-nav {
-
+    position: relative;
+    line-height: 1.2;
   }
 
 }
 
 @import 'topbar';
+@import 'main-nav';

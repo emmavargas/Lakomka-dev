@@ -1,0 +1,13 @@
+.site-hero {
+  background: url("../img/header.jpg") no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 500px;
+  &__content {
+    width: 750px;
+    margin: 0 auto;
+    padding: 0;
+  }
+}
+
+@import 'masthead'
