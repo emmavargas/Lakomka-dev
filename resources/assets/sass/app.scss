@@ -46,10 +46,12 @@ body {
 
 a {
   text-decoration: none;
-  text-transform: uppercase;
 }
 
 
-@import './blocks/_site-header';
-@import './blocks/_site-hero';
-@import './blocks/_site-footer';
+@import './mixins';
+@import './blocks/site';
+@import './blocks/topbar';
+@import './blocks/main-nav';
+@import './blocks/masthead';
+@import './blocks/footer';

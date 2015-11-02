@@ -1,0 +1,45 @@
+$footer-color-background: #2B2B2B;
+
+.site-header {
+  font-size: 10px;
+  font-style: normal;
+  font-weight: 900;
+  line-height: 12px;
+  letter-spacing: 2px;
+  width: 100%;
+  font-family: $font-family-sans-serif;
+  &__topbar {
+    position: relative;
+    line-height: 1.6;
+    padding: 0 30px;
+  }
+
+  &__main-nav {
+    position: relative;
+    line-height: 1.2;
+    padding: 0 30px;
+  }
+  @include clearfix;
+}
+
+.site-hero {
+  background: url("../img/header.jpg") no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 500px;
+  &__content {
+    width: 750px;
+    margin: 0 auto;
+    padding: 0;
+  }
+
+  @include clearfix;
+}
+
+
+.site-footer {
+  background-color: $footer-color-background;
+  &__content {
+  }
+  @include clearfix;
+}

@@ -11,13 +11,12 @@ $topbar-font-color-hover: scale-color($topbar-font-color, $lightness: 90%);
     display: block;
     margin: 0;
     padding: 0;
-    &:first-child {
-      margin-left: 30px;
-    }
 
-    &:last-child {
-      margin-right: 30px;
-    }
+  }
+  &__item {
+    float: left;
+    height: 30px;
+
     &:before {
       content: '';
       display: inline-block;
@@ -26,16 +25,12 @@ $topbar-font-color-hover: scale-color($topbar-font-color, $lightness: 90%);
     }
 
   }
-  &__item {
-    display: inline-block;
-    vertical-align: middle;
-  }
+
   &__link {
     line-height: 1.6;
-    display: inline-block;
+    padding: 4px 10px;
     color: $topbar-font-color;
     text-transform: uppercase;
-    padding: 7px 18px 7px;
     transition: color 100ms linear;
 
     &:hover {
@@ -44,10 +39,10 @@ $topbar-font-color-hover: scale-color($topbar-font-color, $lightness: 90%);
 
   }
   &__search {
+
     &-label {
       color: $topbar-font-color;
       text-transform: uppercase;
-      padding: 7px 6px 7px;
       display: inline-block;
       vertical-align: middle;
     }

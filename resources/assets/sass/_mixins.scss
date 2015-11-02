@@ -1,0 +1,9 @@
+// We use this to do vertical centered elemnts
+@mixin vertical-center {
+  &:before {
+    content: '';
+    display: inline-block;
+    vertical-align: middle;
+    height: 100%;
+  }
+}
