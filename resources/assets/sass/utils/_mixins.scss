@@ -7,3 +7,10 @@
     height: 100%;
   }
 }
+
+@mixin line($line-width: 100%, $line-color: $line-color) {
+  height: 0;
+  border: 0;
+  border-bottom: 1px solid $line-color;
+  width: $line-width;
+}

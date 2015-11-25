@@ -1,7 +1,8 @@
 var elixir = require('laravel-elixir');
 
 var paths = {
-  foundation: 'node_modules/foundation-sites/scss/'
+  foundation: 'node_modules/foundation-sites/scss/',
+  slick: 'node_modules/slick-carousel/'
 };
 
 /*
@@ -16,5 +17,8 @@ var paths = {
  */
 
 elixir(function(mix) {
-    mix.sass('app.scss', null, {includePaths:[paths.foundation]});
+    mix.sass('app.scss', null, {includePaths:[paths.foundation, paths.slick]});
+    mix.browserify('main.js');
+
+    mix.copy(paths.slick + 'slick/fonts', 'public/fonts');
 });

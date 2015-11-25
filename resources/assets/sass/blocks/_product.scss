@@ -1,0 +1,39 @@
+$product-related-bg-color: #E8E8E8;
+
+.product {
+
+  &__header {
+
+  }
+
+  &__subheading {
+  }
+
+  &__heading {
+  }
+
+  &__content {
+    padding-bottom: 50px;
+  }
+
+  &__sidebar {
+
+  }
+
+  &__related {
+    font-size: 1rem;
+    background-color: $product-related-bg-color;
+    text-align: center;
+    padding: 2em 0;
+  }
+
+  &__description {
+    width: 85%;
+
+    .heading-secondary:not(:first-child) {
+      margin-top: 60px;
+    }
+  }
+
+
+}

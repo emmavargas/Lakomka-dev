@@ -1,0 +1,162 @@
+$sidebar-bg-icon-color: $primary-color;
+$sidebar-line-color: $body-font-color;
+$sidebar-font-color: #9E9E9E;
+.sidebar {
+  font-size: rem-calc(12);
+
+  &__separator {
+    @include line();
+    display: block;
+    margin: 15px 0;
+  }
+
+  &__price-box {
+    margin-bottom: 20px;
+  }
+
+  &__price {
+    display: inline-block;
+    width: 30%;
+    line-height: 20px;
+    font-size: 18px;
+    color: #272727;
+    vertical-align: middle;
+  }
+
+  &__price-line {
+    @include line($line-width: 70%);
+    line-height: 20px;
+    display: inline-block;
+    margin: 0;
+    vertical-align: middle;
+  }
+
+  &__actions {
+    @include clearfix;
+  }
+
+  &__action {
+    width: 48%;
+    font-weight: 700;
+    padding: rem-calc(12 10);
+  }
+
+
+  &__social {
+    height: 30px;
+  }
+
+  &__social-label-box {
+    height: 30px;
+    float: left;
+
+    &:before {
+      content: '';
+      height: 100%;
+      vertical-align: middle;
+      display: inline-block;
+    }
+
+    svg {
+      display: inline-block;
+      vertical-align: middle;
+      margin-left: 15px;
+      width: 16px;
+      height: 16px;
+      path {
+        fill: $sidebar-font-color;
+      }
+    }
+  }
+
+  &__social-label {
+    text-transform: uppercase;
+    display: inline-block;
+    vertical-align: middle;
+    font-size: rem-calc(10);
+    line-height: 30px;
+  }
+
+  &__social-list {
+    list-style: none;
+    float: right;
+    margin: 0;
+    padding: 0;
+    height: 30px;
+
+    &:before {
+      content: '';
+      height: 100%;
+      vertical-align: middle;
+      display: inline-block;
+    }
+  }
+
+  &__social-item {
+    display: inline-block;
+    vertical-align: middle;
+    height: 30px;
+    a {
+      display: inline-block;
+      vertical-align: middle;
+      width: 20px;
+      height: 20px;
+      padding: 4px;
+      background-color: $sidebar-bg-icon-color;
+      border-radius: 20px;
+      line-height: 12px;
+      svg {
+        width: 12px;
+        height: 12px;
+
+        path {
+          fill: #fff;
+        }
+      }
+
+      &:hover {
+        background-color: #000;
+      }
+    }
+
+  }
+
+  &__details {
+    @include clearfix;
+  }
+
+  &__bookmarking {
+    @include clearfix;
+  }
+
+  &__tags {
+    line-height: 1.8;
+  }
+
+  &__tag {
+    @extend %dark-link;
+  }
+
+
+  &__license {
+    @extend %dark-link-with-icon;
+    height: 20px;
+    vertical-align: middle;
+    line-height: 20px;
+    font-weight: 300;
+    &-icon {
+      vertical-align: middle;
+      width: 13px;
+      height: 13px;
+
+      path {
+        fill: $sidebar-font-color;
+      }
+    }
+
+    > span {
+      padding-left: 8px;
+    }
+  }
+
+}

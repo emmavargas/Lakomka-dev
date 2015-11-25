@@ -5,10 +5,10 @@
 @import 'foundation/components/grid';
 // @import 'foundation/components/accordion';
 // @import 'foundation/components/alert-boxes';
-// @import 'foundation/components/block-grid';
+@import 'foundation/components/block-grid';
 // @import 'foundation/components/breadcrumbs';
 // @import 'foundation/components/button-groups';
-// @import 'foundation/components/buttons';
+@import 'foundation/components/buttons';
 // @import 'foundation/components/clearing';
 // @import 'foundation/components/dropdown';
 // @import 'foundation/components/dropdown-buttons';
@@ -36,22 +36,50 @@
 // @import 'foundation/components/thumbs';
 // @import 'foundation/components/tooltips';
 // @import 'foundation/components/top-bar';
-// @import 'foundation/components/type';
+@import 'foundation/components/type';
 // @import 'foundation/components/offcanvas';
 // @import 'foundation/components/visibility';
 
-body {
-  font-family: Lato, sans-serif;
-}
+// Utils
+@import
+  './utils/variables',
+  './utils/functions',
+  './utils/mixins',
+  './utils/placeholders';
 
-a {
-  text-decoration: none;
-}
+// Base
+@import
+  './base/base',
+  './base/fonts',
+  './base/typography',
+  './base/helpers';
 
+// Layout
+@import
+  './layout/site',
+  './layout/product-list',
+  './layout/product-filter';
 
-@import './mixins';
-@import './blocks/site';
-@import './blocks/topbar';
-@import './blocks/main-nav';
-@import './blocks/masthead';
-@import './blocks/footer';
+// Slick Carousel
+@import
+  './slick/slick-setup',
+  'slick/slick',
+  'slick/slick-theme';
+
+// Blocks
+@import
+  './blocks/topbar',
+  './blocks/main-nav',
+  './blocks/masthead',
+  './blocks/card',
+  './blocks/menu-hat',
+  './blocks/product',
+  './blocks/attributes',
+  './blocks/carousel',
+  './blocks/sidebar',
+  './blocks/footer';
+
+// Pages
+@import
+  './pages/home',
+  './pages/product';

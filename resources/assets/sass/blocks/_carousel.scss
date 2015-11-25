@@ -1,0 +1,31 @@
+.carousel {
+
+  &__dots {
+    position: relative;
+    z-index: 10;
+    height: 40px;
+    .slick-dots {
+      top: 0;
+      bottom: 0;
+      margin: 0;
+    }
+
+  }
+
+  &__thumbnails {
+    display: block;
+    margin: 0;
+  }
+
+
+  &__thumbnail {
+    display: block;
+    margin: 0;
+    padding: 10px;
+  }
+
+  .slick-prev, .slick-next {
+    top: 38%;
+  }
+
+}

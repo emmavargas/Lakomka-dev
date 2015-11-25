@@ -1,18 +1,21 @@
 $main-nav-logo-color: #C0B5AB;
 $main-nav-color-font: #9E9E9E;
 $main-nav-color-background: #FFF;
-$main-nav-font-color-hover: scale-color($topbar-font-color, $lightness: -90%);
+$main-nav-font-color-hover: scale-color($main-nav-color-font, $lightness: -90%);
 
 .main-nav {
   height: 74px;
   background: #FFF;
   text-transform: uppercase;
-  height: 74px;
+  font-size: rem-calc(10);
+  font-weight: 900;
+  letter-spacing: 2px;
   &__list {
     list-style: none;
     display: inline-block;
     margin: 0;
     padding: 0;
+    font-size: 1em;
   }
   &__item {
     display: inline-block;
@@ -21,8 +24,8 @@ $main-nav-font-color-hover: scale-color($topbar-font-color, $lightness: -90%);
   &__link {
     color: $main-nav-color-font;
     display: inline-block;
-    margin: 21px 0 21px;
-    padding: 10px 10px 10px;
+    margin: 19px 0 19px;
+    padding: 10px 15px 10px;
     transition: color 100ms linear;
 
     &:hover {

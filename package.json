@@ -5,6 +5,8 @@
   },
   "dependencies": {
     "foundation-sites": "^5.5.3",
-    "laravel-elixir": "^3.0.0"
+    "jquery": "^2.1.4",
+    "laravel-elixir": "^3.0.0",
+    "slick-carousel": "^1.5.8"
   }
 }

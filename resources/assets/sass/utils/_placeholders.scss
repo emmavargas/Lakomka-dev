@@ -1,0 +1,27 @@
+%dark-link {
+
+  color: $body-font-color;
+
+  &:hover {
+    color: #000;
+  }
+
+}
+
+%dark-link-with-icon {
+
+  color: $body-font-color;
+  svg path {
+    fill: $body-font-color;
+  }
+
+  &:hover {
+    color: #000;
+
+    svg path {
+      fill: #000;
+    }
+
+  }
+
+}

@@ -1,0 +1,33 @@
+.heading {
+  font-family: $font-family-serif;
+  font-size: rem-calc(35);
+  font-weight: 400;
+  line-height: 1.2;
+}
+
+.subheading {
+  font-family: $font-family-sans-serif;
+  font-size: rem-calc(11);
+  line-height: 1.2;
+  font-weight: 900;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+  color: #9E9E9E;
+}
+
+.heading, .subheading {
+  margin-top: 0;
+}
+
+.heading-secondary {
+  font-size: rem-calc(18);
+  line-height: 1;
+  margin-bottom: 10px;
+  color: $body-font-color;
+}
+
+.line {
+  @include line;
+  margin-bottom: 20px;
+}

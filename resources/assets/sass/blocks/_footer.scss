@@ -1,9 +1,9 @@
 $footer-logo-color: #FFF;
 $footer-font-color: #9E9E9E;
-$footer-font-color-hover: scale-color($topbar-font-color, $lightness: -90%);
+$footer-font-color-hover: scale-color($topbar-font-color, $lightness: 90%);
 
 .footer{
-  font-size: 13px;
+  font-size: rem-calc(13);
   line-height: 15px;
   font-family: $font-family-sans-serif;
   font-weight: 300;
@@ -17,7 +17,7 @@ $footer-font-color-hover: scale-color($topbar-font-color, $lightness: -90%);
     padding: 0;
     display: inline-block;
     height: 40px;
-    // margin-top: 20px;
+    font-size: 1em;
   }
   &__item {
     height: 40px;
@@ -27,8 +27,19 @@ $footer-font-color-hover: scale-color($topbar-font-color, $lightness: -90%);
   &__link {
     color: $footer-font-color;
     padding: 4px 10px;
+    height: 24px;
     vertical-align: middle;
+    display: inline-block;
     transition: color 100ms linear;
+    line-height: 16px;
+    &:hover {
+
+      color: $footer-font-color-hover;
+      svg path {
+        fill: $footer-font-color-hover;
+      }
+
+    }
   }
   &__logo {
     display: block;
@@ -51,9 +62,7 @@ $footer-font-color-hover: scale-color($topbar-font-color, $lightness: -90%);
     display: block;
     margin: 0 auto;
     font-size: 10px;
-    width: 550px;
-    margin-top: 20px;
-    margin-bottom: 20px;
+    max-width: 550px;
     @include clearfix;
   }
 
@@ -70,13 +79,18 @@ $footer-font-color-hover: scale-color($topbar-font-color, $lightness: -90%);
     margin-top: 20px;
   }
 
+  &__social-arrow {
+    vertical-align: middle;
+  }
+
   &__social {
     height: 40px;
     @include vertical-center;
     svg {
       width: 16px;
-      vertical-align: middle;
+      display: inline-block;
       path {
+        transition: fill 100ms linear;
         fill: $footer-font-color;
       }
     }
